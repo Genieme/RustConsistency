@@ -1,0 +1,7 @@
+NEW SYNTAX : 
+Mapping Types : 
+- btree-map: ordered-map : dictionary : 
+let ab = [a: 1, b: 2, c: 3];
+
+- hash-map : hash-table : unordered-map : 
+let ba = map![a: 1, b: 2, c: 3];
