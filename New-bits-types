@@ -1,0 +1,4 @@
+New bits types for future allocator and bits manipulation : 
+
+BITS TYPES : 
+bit8, bit16 => b8, b16;
