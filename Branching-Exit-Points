@@ -1,0 +1,55 @@
+
+Branching or Exit Points : Quad Saga
+
+Names for the 4 functions : 
+  fn branchOut() returns ()
+  fn branchTo(Label) returns ()
+  fn branchWith() returns Val 
+  fn branchIf(BoolExp) returns ()
+  
+Syntaxes of the Expressins : 
+  break; or break (); 
+  break 'label; 
+  break val; 
+  ??? break if x > y; ???
+
+we need 'break if' expression. 
+'if' is the filter for the exit point : exit iff true.
+
+Usage : inside 'loop' block 
+loop { 
+  break if x > y;
+  // equivalent to js : while (x > y) {... }
+  
+  ...
+}
+
+loop { 
+  ...
+  
+  // equivalent to js : do{ ... } while (x > y);
+  break if x > y;
+}
+
+
+
+loop { 
+  ...
+  
+  // see ada-lang : 'exit when' syntax for an equivalent.
+  // 2 or more can be placed anywhere in the the loop, scattered or not.
+  break if x > y;
+  
+  ...
+}
+Note : that is a lot of flexibility and expressive powess.
+Yet the rust core team keeps it from us ?? :)
+
+Please correct the wrong ?? :)
+
+when teaching the branching concept to school students, 
+leaving one component out is a disservice. they need complete 
+understanding and practice of the concept.
+
+Please Help Us Out. THANKS.
+
